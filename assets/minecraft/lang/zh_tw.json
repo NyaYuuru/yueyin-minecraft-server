@@ -1,0 +1,4 @@
+{
+	"death.attack.player": "%1$s 被 %2$s 吃掉了",
+	"death.attack.player.item": "%1$s 被 %2$s 用 %3$s 吃掉了"
+}

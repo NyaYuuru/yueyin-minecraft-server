@@ -1,0 +1,57 @@
+{
+	"pack": {
+		"min_format":34,
+		"max_format": [69, 0],
+		"pack_format": 55,
+		"supported_formats": {
+			"min_inclusive": 34,
+			"max_inclusive": 64
+		},
+		"description": [
+			{
+				"text": "",
+				"extra": [
+					{
+						"text": "伺服器資源包",
+						"color": "green"
+					}
+				]
+			},
+			{
+				"text": "\n"
+			},
+			{
+				"text": "",
+				"extra": [
+					{
+						"text": "",
+						"extra": [
+							{
+								"text": "By ",
+								"color": "aqua"
+							},
+							{
+								"text": "Yuru",
+								"color": "#FF60AF"
+							}
+						]
+					},
+					{
+						"text": "    "
+					},
+					{
+						"text": "\u2756v1.0.0",
+						"color": "yellow"
+					},
+					{
+						"text": "    "
+					},
+					{
+						"text": " \u27561.21.1+",
+						"color": "yellow"
+					}
+				]
+			}
+		]
+	}
+}
