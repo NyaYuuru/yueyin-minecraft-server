@@ -1,0 +1,8 @@
+{
+	"sources": [
+		{
+			"type": "single",
+			"resource": "server:item/strawberry_daifuku"
+		}
+	]
+}
