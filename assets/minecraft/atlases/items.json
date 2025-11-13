@@ -3,6 +3,22 @@
 		{
 			"type": "single",
 			"resource": "server:item/strawberry_daifuku"
+		},
+		{
+			"type": "single",
+			"resource": "server:item/blue_curacao_soda"
+		},
+		{
+			"type": "single",
+			"resource": "server:item/omelet_rice"
+		},
+		{
+			"type": "single",
+			"resource": "server:item/pudding"
+		},
+		{
+			"type": "single",
+			"resource": "server:item/pizza"
 		}
 	]
 }
