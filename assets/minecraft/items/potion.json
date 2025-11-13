@@ -1,0 +1,27 @@
+{
+	"model": {
+		"type": "minecraft:select",
+		"property": "minecraft:custom_model_data",
+		"cases": [
+			{
+				"when": [
+					"item.藍柑梳打"
+				],
+				"model": {
+					"type": "minecraft:model",
+					"model": "server:item/blue_curacao_soda"
+				}
+			}
+		],
+		"fallback": {
+			"type": "minecraft:model",
+			"model": "minecraft:item/potion",
+			"tints": [
+				{
+					"type": "minecraft:potion",
+					"default": -13083194
+				}
+			]
+		}
+	}
+}

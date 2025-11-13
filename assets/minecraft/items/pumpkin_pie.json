@@ -1,0 +1,21 @@
+{
+	"model": {
+		"type": "minecraft:select",
+		"property": "minecraft:custom_model_data",
+		"cases": [
+			{
+				"when": [
+					"item.披薩"
+				],
+				"model": {
+					"type": "minecraft:model",
+					"model": "server:item/pizza"
+				}
+			}
+		],
+		"fallback": {
+			"type": "minecraft:model",
+			"model": "minecraft:item/pumpkin_pie"
+		}
+	}
+}

@@ -1,0 +1,21 @@
+{
+	"model": {
+		"type": "minecraft:select",
+		"property": "minecraft:custom_model_data",
+		"cases": [
+			{
+				"when": [
+					"item.焦糖布丁"
+				],
+				"model": {
+					"type": "minecraft:model",
+					"model": "server:item/pudding"
+				}
+			}
+		],
+		"fallback": {
+			"type": "minecraft:model",
+			"model": "minecraft:item/magma_cream"
+		}
+	}
+}
