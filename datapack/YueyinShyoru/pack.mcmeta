@@ -1,0 +1,45 @@
+{
+	"pack": {
+		"min_format":48,
+		"max_format": 88,
+		"pack_format": 61,
+		"supported_formats": {
+			"min_inclusive": 48,
+			"max_inclusive": 81
+		},
+		"description": {
+			"text": "",
+			"extra": [
+				{
+					"text": "伺服器資料包",
+					"color": "green"
+				},
+				{
+					"text": "\n"
+				},
+				{
+					"text": "\u2756 v1.0.0",
+					"color": "yellow"
+				},
+				{
+					"text": "\n"
+				},
+				{
+					"text": "\u2756 1.21.10+",
+					"color": "yellow"
+				},
+				{
+					"text": "\n"
+				},
+				{
+					"text": "By ",
+					"color": "aqua"
+				},
+				{
+					"text": "Yuru",
+					"color": "#FF60AF"
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,63 @@
+{
+	"pack": {
+		"min_format":48,
+		"max_format": 88,
+		"pack_format": 61,
+		"supported_formats": {
+			"min_inclusive": 48,
+			"max_inclusive": 81
+		},
+		"description": {
+			"text": "",
+			"extra": [
+				[
+					{
+						"text": "使用",
+						"color": "green"
+					},
+					{
+						"text":" ",
+						"color":"white"
+					},
+					{
+						"text": "/reload",
+						"color": "gold"
+					},
+					{
+						"text":" ",
+						"color":"white"
+					},
+					{
+						"text": "指令重新載入資料包後\n顯示重新載入成功的訊息",
+						"color": "green"
+					}
+				],
+				{
+					"text": "\n"
+				},
+				{
+					"text": "\u2756 v1.1.1",
+					"color": "yellow"
+				},
+				{
+					"text": "\n"
+				},
+				{
+					"text": "\u2756 1.21+",
+					"color": "yellow"
+				},
+				{
+					"text": "\n"
+				},
+				{
+					"text": "By ",
+					"color": "aqua"
+				},
+				{
+					"text": "Yuru",
+					"color": "#FF60AF"
+				}
+			]
+		}
+	}
+}
