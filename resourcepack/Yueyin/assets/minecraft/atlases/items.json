@@ -19,6 +19,10 @@
 		{
 			"type": "single",
 			"resource": "server:item/pizza"
+		},
+		{
+			"type": "single",
+			"resource": "server:item/mrt_ticket"
 		}
 	]
 }
