@@ -23,6 +23,18 @@
 		{
 			"type": "single",
 			"resource": "server:item/mrt_ticket"
+		},
+		{
+			"type": "single",
+			"resource": "server:item/slime_fries"
+		},
+		{
+			"type": "single",
+			"resource": "server:item/slime_hamburger"
+		},
+		{
+			"type": "single",
+			"resource": "server:item/slime_cola"
 		}
 	]
 }

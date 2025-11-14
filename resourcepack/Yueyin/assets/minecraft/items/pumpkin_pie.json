@@ -11,6 +11,15 @@
 					"type": "minecraft:model",
 					"model": "server:item/pizza"
 				}
+			},
+			{
+				"when": [
+					"item.史萊姆漢堡"
+				],
+				"model": {
+					"type": "minecraft:model",
+					"model": "server:item/slime_hamburger"
+				}
 			}
 		],
 		"fallback": {

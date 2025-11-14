@@ -1,0 +1,21 @@
+{
+	"model": {
+		"type": "minecraft:select",
+		"property": "minecraft:custom_model_data",
+		"cases": [
+			{
+				"when": [
+					"item.史萊姆薯條"
+				],
+				"model": {
+					"type": "minecraft:model",
+					"model": "server:item/slime_fries"
+				}
+			}
+		],
+		"fallback": {
+			"type": "minecraft:model",
+			"model": "minecraft:item/baked_potato"
+		}
+	}
+}

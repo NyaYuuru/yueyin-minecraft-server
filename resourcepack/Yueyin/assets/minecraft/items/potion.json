@@ -11,6 +11,15 @@
 					"type": "minecraft:model",
 					"model": "server:item/blue_curacao_soda"
 				}
+			},
+			{
+				"when": [
+					"item.史萊姆可樂"
+				],
+				"model": {
+					"type": "minecraft:model",
+					"model": "server:item/slime_cola"
+				}
 			}
 		],
 		"fallback": {
