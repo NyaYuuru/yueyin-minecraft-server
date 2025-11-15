@@ -35,6 +35,22 @@
 		{
 			"type": "single",
 			"resource": "server:item/slime_cola"
+		},
+		{
+			"type": "single",
+			"resource": "server:item/banana"
+		},{
+			"type": "single",
+			"resource": "server:item/banana_peel"
+		},{
+			"type": "single",
+			"resource": "server:item/fried_banana_peel"
+		},{
+			"type": "single",
+			"resource": "server:item/green_banana"
+		},{
+			"type": "single",
+			"resource": "server:item/spotted_banana"
 		}
 	]
 }

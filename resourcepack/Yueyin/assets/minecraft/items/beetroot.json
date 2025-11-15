@@ -1,0 +1,57 @@
+{
+	"model": {
+		"type": "minecraft:select",
+		"property": "minecraft:custom_model_data",
+		"cases": [
+			{
+				"when": [
+					"item.香蕉"
+				],
+				"model": {
+					"type": "minecraft:model",
+					"model": "server:item/banana"
+				}
+			},
+			{
+				"when": [
+					"item.香蕉皮"
+				],
+				"model": {
+					"type": "minecraft:model",
+					"model": "server:item/banana_peel"
+				}
+			},
+			{
+				"when": [
+					"item.炸香蕉皮"
+				],
+				"model": {
+					"type": "minecraft:model",
+					"model": "server:item/fried_banana_peel"
+				}
+			},
+			{
+				"when": [
+					"item.綠香蕉"
+				],
+				"model": {
+					"type": "minecraft:model",
+					"model": "server:item/green_banana"
+				}
+			},
+			{
+				"when": [
+					"item.斑點香蕉"
+				],
+				"model": {
+					"type": "minecraft:model",
+					"model": "server:item/spotted_banana"
+				}
+			}
+		],
+		"fallback": {
+			"type": "minecraft:model",
+			"model": "minecraft:item/beetroot"
+		}
+	}
+}
