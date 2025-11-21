@@ -51,6 +51,9 @@
 		},{
 			"type": "single",
 			"resource": "server:item/spotted_banana"
+		},{
+			"type": "single",
+			"resource": "server:item/spicy_rabbit_head"
 		}
 	]
 }
