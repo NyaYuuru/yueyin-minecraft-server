@@ -54,6 +54,12 @@
 		},{
 			"type": "single",
 			"resource": "server:item/spicy_rabbit_head"
+		},{
+			"type": "single",
+			"resource": "server:item/cat_food_can"
+		},{
+			"type": "single",
+			"resource": "server:item/dog_food_can"
 		}
 	]
 }
