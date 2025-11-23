@@ -1,0 +1,11 @@
+{
+	"item.goat_horn.sound.mrt.tamsui_xinyi_line": {
+		"sounds": [
+			{
+				"type": "file",
+				"name": "server:mrt/tamsui_xinyi_line",
+				"volume": 0.1
+			}
+		]
+	}
+}
