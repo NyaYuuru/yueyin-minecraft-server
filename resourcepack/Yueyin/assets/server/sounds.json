@@ -7,5 +7,32 @@
 				"volume": 0.1
 			}
 		]
+	},
+	"item.goat_horn.sound.mrt.bannan_line": {
+		"sounds": [
+			{
+				"type": "file",
+				"name": "server:mrt/bannan_line",
+				"volume": 0.1
+			}
+		]
+	},
+	"item.goat_horn.sound.family_mart": {
+		"sounds": [
+			{
+				"type": "file",
+				"name": "server:family_mart",
+				"volume": 0.1
+			}
+		]
+	},
+	"item.goat_horn.sound.family_mart_new": {
+		"sounds": [
+			{
+				"type": "file",
+				"name": "server:family_mart_new",
+				"volume": 0.1
+			}
+		]
 	}
 }
