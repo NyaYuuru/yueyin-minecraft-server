@@ -1,0 +1,10 @@
+{
+	"criteria": {
+		"firest_join": {
+			"trigger": "minecraft:tick"
+		}
+	},
+	"rewards": {
+		"function": "server:main/firest_join_server"
+	}
+}

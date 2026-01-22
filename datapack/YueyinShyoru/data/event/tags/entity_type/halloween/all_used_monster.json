@@ -1,0 +1,17 @@
+{
+	"values": [
+		"minecraft:bogged",
+		"minecraft:endermite",
+		"minecraft:evoker",
+		"minecraft:husk",
+		"minecraft:ravager",
+		"minecraft:silverfish",
+		"minecraft:skeleton",
+		"minecraft:stray",
+		"minecraft:vex",
+		"minecraft:vindicator",
+		"minecraft:witch",
+		"minecraft:wither_skeleton",
+		"minecraft:zombie"
+	]
+}

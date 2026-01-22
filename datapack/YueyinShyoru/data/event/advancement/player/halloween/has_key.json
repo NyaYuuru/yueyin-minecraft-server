@@ -1,0 +1,20 @@
+{
+	"criteria": {
+		"has_key": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": "minecraft:echo_shard",
+						"components": {
+							"minecraft:custom_data": "{event:{\"event:halloween\":{both_king_key:1b}}}"
+						}
+					}
+				]
+			}
+		}
+	},
+	"rewards": {
+		"function": "event:activity/halloween/boss/altar/door/has_key"
+	}
+}

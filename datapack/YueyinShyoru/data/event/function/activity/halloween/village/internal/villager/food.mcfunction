@@ -1,0 +1,147 @@
+
+
+
+give @s minecraft:villager_spawn_egg[\
+	minecraft:lore=[\
+		{"text":"純正聚落","color":"yellow","italic":false},\
+		{"text":"純正廚師","color":"yellow","italic":false}\
+	],\
+	minecraft:entity_data={\
+		id:"minecraft:villager",\
+		CustomName:{"text":"",extra:[{"text":"純正聚落","color":"aqua"},{"text":"純正廚師","color":"gold"}]},\
+		CustomNameVisible:1b,Invulnerable:1b,\
+		VillagerData:{type:"minecraft:taiga",profession:"minecraft:butcher",level:6},\
+		Offers:{\
+			Recipes:[\
+				{\
+					buy:{\
+						id:"minecraft:copper_nugget",\
+						count:1,\
+						components:{\
+							"minecraft:custom_name":{"text":"","italic":false,extra:[{"text":"銅錢","color":"gold"}]},\
+							"minecraft:max_stack_size":99\
+						}\
+					},\
+					sell:{\
+						id:"minecraft:bread",\
+						count:4,\
+						components:{\
+							"minecraft:custom_name":{"text":"","italic":false,"extra":[{"text":"小餐包","color":"white"}]},\
+							"minecraft:lore":[\
+								{"text":"","italic":false,"extra":[{"text":"能基本飽足那空虛的胃","color":"dark_gray"}]}\
+							],\
+							"minecraft:consumable":{\
+								animation:"eat",\
+								consume_seconds:1.2f\
+							},\
+							"minecraft:food":{nutrition:8,saturation:8.0f,can_always_eat:1b}\
+						}\
+					},\
+					maxUses:2147483647,xp:0,rewardExp:0b\
+				},\
+				{\
+					buy:{\
+						id:"minecraft:copper_nugget",\
+						count:2,\
+						components:{\
+							"minecraft:custom_name":{"text":"","italic":false,extra:[{"text":"銅錢","color":"gold"}]},\
+							"minecraft:max_stack_size":99\
+						}\
+					},\
+					sell:{\
+						id:"minecraft:baked_potato",\
+						count:4,\
+						components:{\
+							"minecraft:custom_name":{"text":"","italic":false,"extra":[{"text":"烤馬鈴薯","color":"white"}]},\
+							"minecraft:lore":[\
+								{"text":"","italic":false,"extra":[{"text":"純正聚落的馬鈴薯","color":"dark_gray"}]},\
+								{"text":"","italic":false,"extra":[{"text":"他們的主要正餐","color":"dark_gray"}]}\
+							],\
+							"minecraft:consumable":{\
+								animation:"eat",\
+								consume_seconds:1.2f\
+							},\
+							"minecraft:food":{nutrition:11,saturation:11.0f,can_always_eat:1b}\
+						}\
+					},\
+					maxUses:2147483647,xp:0,rewardExp:0b\
+				},\
+				{\
+					buy:{\
+						id:"minecraft:copper_nugget",\
+						count:3,\
+						components:{\
+							"minecraft:custom_name":{"text":"","italic":false,extra:[{"text":"銅錢","color":"gold"}]},\
+							"minecraft:max_stack_size":99\
+						}\
+					},\
+					sell:{\
+						id:"minecraft:cooked_porkchop",\
+						count:2,\
+						components:{\
+							"minecraft:custom_name":{"text":"","italic":false,"extra":[{"text":"奢華肉排","color":"white"}]},\
+							"minecraft:lore":[\
+								{"text":"","italic":false,"extra":[{"text":"純正聚落的肉食","color":"dark_gray"}]},\
+								{"text":"","italic":false,"extra":[{"text":"在這充滿怪物的地方","color":"dark_gray"}]},\
+								{"text":"","italic":false,"extra":[{"text":"很難狩獵到這麼好的食品了","color":"dark_gray"}]}\
+							],\
+							"minecraft:consumable":{\
+								animation:"eat",\
+								consume_seconds:1.2f\
+							},\
+							"minecraft:food":{nutrition:16,saturation:16.0f,can_always_eat:1b}\
+						}\
+					},\
+					maxUses:2147483647,xp:0,rewardExp:0b\
+				},\
+				{\
+					buy:{\
+						id:"minecraft:copper_nugget",\
+						count:10,\
+						components:{\
+							"minecraft:custom_name":{"text":"","italic":false,extra:[{"text":"銅錢","color":"gold"}]},\
+							"minecraft:max_stack_size":99\
+						}\
+					},\
+					sell:{\
+						id:"minecraft:dragon_breath",\
+						count:1,\
+						components:{\
+							"minecraft:custom_name":{"text":"","italic":false,"extra":[{"text":"強烈藥水","color":"gold"}]},\
+							"minecraft:lore":[\
+								{"text":"","italic":false,"extra":[{"text":"純正聚落的緊急治療藥水","color":"gray"}]},\
+								{'text':"","italic":false,"extra":[{"text":"通常喝下去大部分的狀態都能恢復","color":"gray"}]}\
+							],\
+							"minecraft:consumable":{\
+								animation:"drink",\
+								consume_seconds:2.3f,\
+								sound:{\
+									sound_id:"minecraft:entity.generic.burn"\
+								},\
+								on_consume_effects:[\
+									{\
+										type:"minecraft:apply_effects",\
+										probability:1.0f,\
+										effects:[\
+											{id:"minecraft:regeneration",amplifier:9b,duration:200,show_particles:0b,show_icon:0b},\
+											{id:"minecraft:resistance",amplifier:1b,duration:200,show_particles:0b,show_icon:0b}\
+										],\
+									}\
+								]\
+							}\
+						}\
+					},\
+					maxUses:2147483647,xp:0,rewardExp:0b\
+				}\
+			]\
+		}\
+	}\
+]
+
+#{id: "minecraft:bread", count: 99, components: {"minecraft:food": {nutrition: 8, saturation: 8.0f, can_always_eat: 1b}, "minecraft:lore": [{italic: 0b, extra: [{color: "dark_gray", text: "純正聚落的小餐包"}], text: ""}, {italic: 0b, extra: [{color: "dark_gray", text: "能基本飽足那空虛的胃"}], text: ""}], "minecraft:max_stack_size": 99, "minecraft:consumable": {consume_seconds: 1.2f}, "minecraft:custom_name": {italic: 0b, extra: [{color: "white", text: "小餐包"}], text: ""}}}
+#{id: "minecraft:baked_potato", count: 99, components: {"minecraft:food": {nutrition: 11, saturation: 11.0f, can_always_eat: 1b}, "minecraft:lore": [{italic: 0b, extra: [{color: "dark_gray", text: "純正聚落的馬鈴薯"}], text: ""}, {italic: 0b, extra: [{color: "dark_gray", text: "他們的主要正餐"}], text: ""}], "minecraft:max_stack_size": 99, "minecraft:custom_name": {italic: 0b, extra: [{color: "white", text: "烤馬鈴薯"}], text: ""}}}
+#{id: "minecraft:cooked_porkchop", count: 99, components: {"minecraft:food": {nutrition: 16, saturation: 16.0f, can_always_eat: 1b}, "minecraft:lore": [{italic: 0b, extra: [{color: "dark_gray", text: "純正聚落的肉食"}], text: ""}, {italic: 0b, extra: [{color: "dark_gray", text: "在這充滿怪物的地方"}], text: ""}, {italic: 0b, extra: [{color: "dark_gray", text: "很難狩獵到這麼好的食品了"}], text: ""}], "minecraft:max_stack_size": 99, "minecraft:consumable": {consume_seconds: 1.8f}, "minecraft:custom_name": {italic: 0b, extra: [{color: "white", text: "奢華肉排"}], text: ""}}}
+#{id: "minecraft:dragon_breath", count: 99, components: {"minecraft:lore": [{italic: 0b, extra: [{color: "gray", text: "純正聚落的緊急治療藥水"}], text: ""}, {italic: 0b, extra: [{color: "gray", text: "通常喝下去大部分的狀態都能恢復"}], text: ""}], "minecraft:max_stack_size": 99, "minecraft:enchantment_glint_override": 1b, "minecraft:consumable": {consume_seconds: 2.3f, sound: {sound_id: "minecraft:entity.generic.burn"}, on_consume_effects: [{type: "minecraft:apply_effects", effects: [{show_particles: 0b, show_icon: 0b, id: "minecraft:regeneration", amplifier: 9b, duration: 200}, {show_particles: 0b, show_icon: 0b, id: "minecraft:resistance", amplifier: 1b, duration: 200}]}], animation: "drink"}, "minecraft:custom_name": {italic: 0b, extra: [{color: "gold", text: "強烈藥水"}], text: ""}}}
+
+
+#/give @p minecraft:copper_nugget[max_stack_size=99,custom_name=[{"text":"","italic":false,extra:[{"text":"銅錢","color":"gold"}]}]] 1

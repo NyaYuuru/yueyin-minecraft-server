@@ -1,0 +1,91 @@
+
+
+give @s minecraft:orange_shulker_box[\
+	minecraft:custom_name={"text":"","italic":false,"extra":[{"text":"忘憂系列物品","color":"aqua"},{"text":" - ","color":"red"},{"text":"ULTRAMAR","color":"green"},{"text":" - ","color":"red"},{"text":"星合 豊老闆","color":"yellow"}]},\
+	minecraft:container=[\
+		{\
+			slot:0b,\
+			item:{\
+				id:"minecraft:pufferfish_bucket",\
+				count:1,\
+				components:{\
+					"minecraft:custom_name":{"text":"","italic":false,"extra":[{"text":"河豚","color":"#71D2F6"}]},\
+					"minecraft:lore":[\
+						{"text":"","italic":false,"extra":[{"text":"小心! 它有毒...","color":"white"}]}\
+					]\
+				}\
+			}\
+		},\
+		{\
+			slot:1b,\
+			item:{\
+				id:"minecraft:goat_horn",\
+				count:1,\
+				components:{\
+					"minecraft:custom_name":{"text":"","italic":false,"extra":[{"text":"奇怪的樂器","color":"#71D2F6"}]},\
+					"minecraft:lore":[\
+						{"text":"","italic":false,"extra":[{"text":"它是怎麼吹出這麼多聲音的!?","color":"white"}]}\
+					],\
+					"minecraft:instrument":{\
+						description:{"text":"","color":"white","italic":false,"extra":[{"text":"台北","color":"#4EB94B"},{"text":"捷運","color":"#007CAC"},{"text":" "},{"text":"淡水信義線","color":"red"}]},\
+						sound_event:{sound_id:"server:item.goat_horn.sound.mrt.tamsui_xinyi_line"},\
+						range:64.0f,\
+						use_duration:30\
+					}\
+				}\
+			}\
+		},\
+		{\
+			slot:2b,\
+			item:{\
+				id:"minecraft:wind_charge",\
+				count:16,\
+				components:{\
+					"minecraft:custom_name":{"text":"","italic":false,"extra":[{"translate":"item.minecraft.wind_charge","color":"#71D2F6"}]},\
+					"minecraft:lore":[\
+						{"text":"","italic":false,"extra":[{"text":"把別人轟飛!","color":"white"}]}\
+					]\
+				}\
+			}\
+		},\
+		{\
+			slot:3b,\
+			item:{\
+				id:"minecraft:vex_spawn_egg",\
+				count:16,\
+				components:{\
+					"minecraft:custom_name":{"text":"","italic":false,"extra":[{"text":"巨型蚊子","color":"#71D2F6"}]},\
+					"minecraft:lore":[\
+						{"text":"","italic":false,"extra":[{"text":"超大隻蚊子，看見誰都咬","color":"white"}]}\
+					],\
+					"minecraft:entity_data":{\
+						id:"minecraft:vex",\
+						equipment:{mainhand:{id:"minecraft:iron_sword",count:1}},\
+						drop_chances:{mainhand:0.0f},\
+						DeathLootTable:"server:empty"\
+					}\
+				}\
+			}\
+		},\
+		{\
+			slot:4b,\
+			item:{\
+				id:"minecraft:firework_rocket",\
+				count:64,\
+				components:{\
+					"minecraft:custom_name":{"text":"","italic":false,"extra":[{"text":"煙火","color":"#71D2F6"}]},\
+					"minecraft:lore":[\
+						{"text":"","italic":false,"extra":[{"text":"在晚上放煙火!","color":"white"}]}\
+					],\
+					"minecraft:fireworks":{\
+						explosions:[\
+							{shape:"small_ball",colors:[14602026,2437522,15790320]}\
+						],\
+						flight_duration:1b\
+					}\
+				}\
+			}\
+		}\
+	]\
+]
+

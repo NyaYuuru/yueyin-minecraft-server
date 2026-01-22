@@ -1,0 +1,65 @@
+
+
+give @s minecraft:orange_shulker_box[\
+	minecraft:custom_name={"text":"","italic":false,"extra":[{"text":"忘憂系列物品","color":"aqua"},{"text":" - ","color":"red"},{"text":"兌幣處","color":"green"},{"text":" - ","color":"red"},{"text":"代幣商","color":"yellow"}]},\
+	minecraft:container=[\
+		{\
+			slot:0b,\
+			item:{\
+				id:"minecraft:prismarine_crystals",\
+				count:1,\
+				components:{\
+					"minecraft:custom_name":{"text":"","italic":false,"extra":[{"text":"忘憂代幣","color":"gold"}]},\
+					"minecraft:lore":[\
+						{"text":"","italic":false,"extra":[{"text":"忘憂地下街的專屬兌換代幣","color":"dark_purple"}]}\
+					],\
+					"minecraft:enchantments":{"minecraft:fortune":1},\
+					"minecraft:food":{nutrition:1,saturation:1.0f,can_always_eat:1b},\
+					"minecraft:consumable":{\
+						on_consume_effects:[\
+							{\
+								type:"minecraft:apply_effects",\
+								effects:[\
+									{id:"minecraft:instant_damage",duration:2,show_particles:0b,show_icon:0b},\
+									{id:"minecraft:luck",duration:200,show_particles:0b,show_icon:0b}\
+								]\
+							}\
+						],\
+						sound:{sound_id:"minecraft:block.amethyst_block.chime"}\
+					},\
+					"minecraft:max_stack_size":99,\
+					"minecraft:tooltip_display":{hidden_components:["minecraft:enchantments"]}\
+				}\
+			}\
+		},\
+		{\
+			slot:1b,\
+			item:{\
+				id:"minecraft:tide_armor_trim_smithing_template",\
+				count:1,\
+				components:{\
+					"minecraft:custom_name":{"text":"","italic":false,"extra":[{"text":"忘憂代幣塊","color":"gold"}]},\
+					"minecraft:lore":[\
+						{"text":"","italic":false,"extra":[{"text":"由99個忘憂代幣去濃縮成的一個板板","color":"dark_purple"}]}\
+					],\
+					"minecraft:enchantments":{"minecraft:fortune":1},\
+					"minecraft:max_stack_size":99,\
+					"minecraft:tooltip_display":{hidden_components:["minecraft:enchantments","minecraft:attribute_modifiers","minecraft:unbreakable","minecraft:can_break","minecraft:can_place_on","minecraft:dyed_color","minecraft:trim"]}\
+				}\
+			}\
+		},\
+		{\
+			slot:2b,\
+			item:{\
+				id:"minecraft:sunflower",\
+				count:1,\
+				components:{\
+					"minecraft:custom_name":{"text":"","italic":false,"extra":[{"text":"中秋硬幣","color":"gold"}]},\
+					"minecraft:enchantments":{"minecraft:fortune":1},\
+					"minecraft:tooltip_display":{hidden_components:["minecraft:enchantments"]}\
+				}\
+			}\
+		}\
+	]\
+]
+

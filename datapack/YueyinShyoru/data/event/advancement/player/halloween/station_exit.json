@@ -1,0 +1,32 @@
+{
+	"criteria": {
+		"event_enter": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:reference",
+						"name": "event:activity/halloween/special/station_exit"
+					},
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type_specific": {
+								"type": "minecraft:player",
+								"gamemode": [
+									"survival",
+									"creative",
+									"adventure"
+								]
+							}
+						}
+					}
+				]
+			}
+		}
+	},
+	"rewards": {
+		"function": "event:activity/halloween/gobal/station_exit"
+	}
+}

@@ -1,0 +1,67 @@
+
+
+give @s minecraft:orange_shulker_box[\
+	minecraft:custom_name={"text":"","italic":false,"extra":[{"text":"忘憂系列物品","color":"aqua"},{"text":" - ","color":"red"},{"text":"貓糧狗糧店","color":"green"},{"text":" - ","color":"red"},{"text":"青玄老闆","color":"yellow"}]},\
+	minecraft:container=[\
+		{\
+			slot:0b,\
+			item:{\
+				id:"minecraft:salmon",\
+				count:1,\
+				components:{\
+					"minecraft:custom_name":{"text":"","italic":false,"extra":[{"text":"貓罐罐","color":"#FBC9E6"}]},\
+					"minecraft:lore":[\
+						{"text":"","italic":false,"extra":[{"text":"微微冒著香氣的貓咪專屬罐頭","color":"#F06097"}]},\
+						{"text":"","italic":false,"extra":[{"text":"新鮮鮭魚、高蛋白、富含魚油","color":"#F06097"}]},\
+						{"text":"","italic":false,"extra":[{"text":"為貓科生物提供必要的能量來源","color":"#F06097"}]}\
+					],\
+					"minecraft:food":{nutrition:8,saturation:8.0f,can_always_eat:1b},\
+					"minecraft:consumable":{\
+						animation:"eat",\
+						consume_seconds:1.6f,\
+						has_consume_particles:1b,\
+						on_consume_effects:[\
+							{\
+								type:"minecraft:apply_effects",\
+								effects:[\
+									{id:"minecraft:poison",amplifier:0,duration:1200,show_particles:0b,show_icon:0b}\
+								]\
+							}\
+						]\
+					},\
+					"minecraft:custom_model_data":{strings:["item.貓罐罐"]}\
+				}\
+			}\
+		},\
+		{\
+			slot:1b,\
+			item:{\
+				id:"minecraft:rotten_flesh",\
+				count:1,\
+				components:{\
+					"minecraft:custom_name":{"text":"","italic":false,"extra":[{"text":"狗罐罐","color":"#FBC9E6"}]},\
+					"minecraft:lore":[\
+						{"text":"","italic":false,"extra":[{"text":"富含大塊肉和香濃肉汁的狗狗罐頭","color":"#F06097"}]},\
+						{"text":"","italic":false,"extra":[{"text":"也有人類把它當糧食吃......味道見仁見智","color":"#F06097"}]}\
+					],\
+					"minecraft:food":{nutrition:8,saturation:8.0f,can_always_eat:1b},\
+					"minecraft:consumable":{\
+						animation:"eat",\
+						consume_seconds:1.6f,\
+						has_consume_particles:1b,\
+						on_consume_effects:[\
+							{\
+								type:"minecraft:apply_effects",\
+								effects:[\
+									{id:"minecraft:nausea",amplifier:0,duration:1200,show_particles:0b,show_icon:0b}\
+								]\
+							}\
+						]\
+					},\
+					"minecraft:custom_model_data":{strings:["item.狗罐罐"]}\
+				}\
+			}\
+		}\
+	]\
+]
+

@@ -1,0 +1,152 @@
+{
+	"description": {
+		"text": "爆炸"
+	},
+	"supported_items": [],
+	"weight": 1,
+	"max_level": 1,
+	"min_cost": {
+		"base": 0,
+		"per_level_above_first": 0
+	},
+	"max_cost": {
+		"base": 0,
+		"per_level_above_first": 0
+	},
+	"anvil_cost": 0,
+	"slots": [
+		"any"
+	],
+	"effects": {
+		"minecraft:tick": [
+			{
+				"requirements": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:armor_stand"
+						}
+					},
+					{
+						"condition": "minecraft:inverted",
+						"term": {
+							"condition": "minecraft:entity_properties",
+							"entity": "this",
+							"predicate": {
+								"vehicle": {}
+							}
+						}
+					},
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"predicates": {
+								"minecraft:custom_data": "{random:1}"
+							}
+						}
+					}
+				],
+				"effect": {
+					"type": "minecraft:explode",
+					"attribute_to_user": true,
+					"damage_type": "shyoru:fire_wand/1",
+					"knockback_multiplier": 1,
+					"radius": 2.5,
+					"create_fire": true,
+					"block_interaction": "none",
+					"small_particle": {
+						"type": "minecraft:explosion"
+					},
+					"large_particle": {
+						"type": "minecraft:explosion"
+					},
+					"block_particles": [],
+					"sound": {
+						"sound_id": "minecraft:entity.generic.explode",
+						"range": 0
+					}
+				}
+			},
+			{
+				"requirements": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:armor_stand"
+						}
+					},
+					{
+						"condition": "minecraft:inverted",
+						"term": {
+							"condition": "minecraft:entity_properties",
+							"entity": "this",
+							"predicate": {
+								"vehicle": {}
+							}
+						}
+					},
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"predicates": {
+								"minecraft:custom_data": "{random:2}"
+							}
+						}
+					}
+				],
+				"effect": {
+					"type": "minecraft:explode",
+					"attribute_to_user": true,
+					"damage_type": "shyoru:fire_wand/2",
+					"knockback_multiplier": 1,
+					"radius": 2.5,
+					"create_fire": true,
+					"block_interaction": "none",
+					"small_particle": {
+						"type": "minecraft:explosion"
+					},
+					"large_particle": {
+						"type": "minecraft:explosion"
+					},
+					"block_particles": [],
+					"sound": {
+						"sound_id": "minecraft:entity.generic.explode",
+						"range": 0
+					}
+				}
+			},
+			{
+				"requirements": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": [
+								"minecraft:armor_stand",
+								"minecraft:fireball"
+							]
+						}
+					},
+					{
+						"condition": "minecraft:inverted",
+						"term": {
+							"condition": "minecraft:entity_properties",
+							"entity": "this",
+							"predicate": {
+								"vehicle": {}
+							}
+						}
+					}
+				],
+				"effect": {
+					"type": "minecraft:run_function",
+					"function": "shyoru:main/custom_item/fire_wand/explode_source/kill_self"
+				}
+			}
+		]
+	}
+}

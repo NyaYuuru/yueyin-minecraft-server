@@ -1,0 +1,107 @@
+
+
+give @s minecraft:orange_shulker_box[\
+	minecraft:custom_name={"text":"","italic":false,"extra":[{"text":"忘憂系列物品","color":"aqua"},{"text":" - ","color":"red"},{"text":"邪惡麥當勞","color":"green"},{"text":" - ","color":"red"},{"text":"YA燁老闆","color":"yellow"}]},\
+	minecraft:container=[\
+		{\
+			slot:0b,\
+			item:{\
+				id:"minecraft:baked_potato",\
+				count:1,\
+				components:{\
+					"minecraft:custom_name":{"text":"","italic":false,"extra":[{"text":"史萊姆薯條","color":"#FFE498"}]},\
+					"minecraft:lore":[\
+						{"text":"","italic":false,"extra":[{"text":"由森林深處的史萊姆精華製作而成","color":"#F9ABA1"}]},\
+						{"text":"","italic":false,"extra":[{"text":"外脆內柔 每咬一口都會嘗到微微的鹹香","color":"#F9ABA1"}]}\
+					],\
+					"minecraft:food":{nutrition:6,saturation:6.0f,can_always_eat:1b},\
+					"minecraft:consumable":{\
+						animation:"eat",\
+						consume_seconds:1.0f,\
+						has_consume_particles:1b,\
+						on_consume_effects:[\
+							{\
+								type:"minecraft:apply_effects",\
+								effects:[\
+									{id:"minecraft:luck",amplifier:4,duration:12000,show_particles:0b,show_icon:0b}\
+								],\
+								probability:1.0f\
+							}\
+						]\
+					},\
+					"minecraft:custom_model_data":{strings:["item.史萊姆薯條"]},\
+				}\
+			}\
+		},\
+		{\
+			slot:1b,\
+			item:{\
+				id:"minecraft:pumpkin_pie",\
+				count:1,\
+				components:{\
+					"minecraft:custom_name":{"text":"","italic":false,"extra":[{"text":"史萊姆漢堡","color":"#FFE498"}]},\
+					"minecraft:lore":[\
+						{"text":"","italic":false,"extra":[{"text":"柔軟的史萊姆肉在蓬鬆的麵包中","color":"#F9ABA1"}]},\
+						{"text":"","italic":false,"extra":[{"text":"散發著淡淡的草香與溫暖的魔力","color":"#F9ABA1"}]},\
+						{"text":"","italic":false,"extra":[{"text":"是冒險者們恢復體力的必備料理","color":"#F9ABA1"}]}\
+					],\
+					"minecraft:food":{nutrition:14,saturation:14.0f,can_always_eat:1b},\
+					"minecraft:consumable":{\
+						animation:"eat",\
+						consume_seconds:2.0f,\
+						has_consume_particles:1b,\
+						on_consume_effects:[\
+							{\
+								type:"minecraft:apply_effects",\
+								effects:[\
+									{id:"minecraft:regeneration",amplifier:1,duration:6000,show_particles:0b,show_icon:0b},\
+									{id:"minecraft:resistance",amplifier:0,duration:6000,show_particles:0b,show_icon:0b}\
+								],\
+								probability:1.0f\
+							}\
+						]\
+					},\
+					"minecraft:custom_model_data":{strings:["item.史萊姆漢堡"]},\
+				}\
+			}\
+		},\
+		{\
+			slot:2b,\
+			item:{\
+				id:"minecraft:potion",\
+				count:1,\
+				components:{\
+					"minecraft:custom_name":{"text":"","italic":false,"extra":[{"text":"史萊姆可樂","color":"#FFE498"}]},\
+					"minecraft:lore":[\
+						{"text":"","italic":false,"extra":[{"text":"閃著幽光的氣泡在杯中跳舞","color":"#F9ABA1"}]},\
+						{"text":"","italic":false,"extra":[{"text":"喝起來冰涼爽口 還帶有一點神祕的甜味","color":"#F9ABA1"}]},\
+						{"text":"","italic":false,"extra":[{"text":"據說喝下後腳步變得更輕盈 連影子都跟不上你的速度","color":"#F9ABA1"}]}\
+					],\
+					"minecraft:consumable":{\
+						animation:"drink",\
+						consume_seconds:1.6f,\
+						has_consume_particles:0b,\
+						on_consume_effects:[],\
+						sound:"minecraft:entity.generic.drink"\
+					},\
+					"minecraft:potion_contents":{\
+						custom_color:3803914,\
+						custom_effects:[\
+							{id:"minecraft:speed",amplifier:3,duration:6000,show_particles:0b,show_icon:0b},\
+							{id:"minecraft:jump_boost",amplifier:1,duration:6000,show_particles:0b,show_icon:0b}\
+						]\
+					},\
+					"minecraft:use_remainder":{\
+						id:"minecraft:paper",\
+						count:2\
+					},\
+					"minecraft:max_stack_size":64,\
+					"minecraft:tooltip_display":{hidden_components:["minecraft:potion_contents"]},\
+					"minecraft:custom_model_data":{strings:["item.史萊姆可樂"]},\
+				}\
+			}\
+		}\
+	]\
+]
+
+

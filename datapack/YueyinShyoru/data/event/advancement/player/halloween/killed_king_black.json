@@ -1,0 +1,22 @@
+{
+	"criteria": {
+		"kill_colorless_devil": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:reference",
+						"name": "event:activity/halloween/area/altar/altar"
+					}
+				],
+				"entity": {
+					"type": "minecraft:skeleton",
+					"nbt": "{Tags:[\"event.halloween.boss\",\"event.halloween.boss.both_king.black\"]}"
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "event:activity/halloween/boss/altar/boss_bar/king_black_dead"
+	}
+}

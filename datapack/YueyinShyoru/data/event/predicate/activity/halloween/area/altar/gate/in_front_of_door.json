@@ -1,0 +1,33 @@
+{
+	"condition": "minecraft:all_of",
+	"terms": [
+		{
+			"condition": "minecraft:reference",
+			"name": "server:dimension/overworld"
+		},
+		{
+			"condition": "minecraft:any_of",
+			"terms": [
+				{
+					"condition": "minecraft:location_check",
+					"predicate": {
+						"position": {
+							"x": {
+								"min": 619.0,
+								"max": 621.0
+							},
+							"y": {
+								"min": 52.0,
+								"max": 60.0
+							},
+							"z": {
+								"min": -49.0,
+								"max": -44.0
+							}
+						}
+					}
+				}
+			]
+		}
+	]
+}

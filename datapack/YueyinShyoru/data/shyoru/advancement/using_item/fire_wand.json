@@ -1,0 +1,18 @@
+{
+	"criteria": {
+		"consume_item": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"items":"minecraft:enchanted_book",
+					"predicates": {
+						"minecraft:custom_data": "{using_item:{id:\"shyoru:fire_wand\"}}"
+					}
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "shyoru:advancement/consume_item/fire_wand"
+	}
+}

@@ -1,0 +1,17 @@
+{
+	"criteria": {
+		"consume_item": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"predicates": {
+						"minecraft:custom_data": "{consumable:{strings:[\"item.麻辣兔頭\"]}}"
+					}
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "shyoru:advancement/consume_item/spicy_rabbit_head"
+	}
+}

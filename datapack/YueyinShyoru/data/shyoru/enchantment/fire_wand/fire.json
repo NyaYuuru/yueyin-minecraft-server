@@ -1,0 +1,92 @@
+{
+	"description": {
+		"text": "火焰傷害"
+	},
+	"supported_items": [],
+	"weight": 1,
+	"max_level": 1,
+	"min_cost": {
+		"base": 0,
+		"per_level_above_first": 0
+	},
+	"max_cost": {
+		"base": 0,
+		"per_level_above_first": 0
+	},
+	"anvil_cost": 0,
+	"slots": [
+		"any"
+	],
+	"effects": {
+		"minecraft:post_attack": [
+			{
+				"requirements": [
+					{
+						"condition": "minecraft:damage_source_properties",
+						"predicate": {
+							"direct_entity": {
+								"type": "minecraft:fireball",
+								"nbt": "{Tags:[\"server.main.custom_item.shyoru.fire_wand.projectile\"]}"
+							}
+						}
+					}
+				],
+				"effect": {
+					"type": "minecraft:run_function",
+					"function": "shyoru:main/custom_item/fire_wand/post_attack/attacker"
+				},
+				"enchanted": "attacker",
+				"affected": "attacker"
+			},
+			{
+				"requirements": [
+					{
+						"condition": "minecraft:damage_source_properties",
+						"predicate": {
+							"direct_entity": {
+								"type": "minecraft:fireball",
+								"nbt": "{Tags:[\"server.main.custom_item.shyoru.fire_wand.projectile\"]}"
+							}
+						}
+					}
+				],
+				"effect": {
+					"type": "minecraft:run_function",
+					"function": "shyoru:main/custom_item/fire_wand/post_attack/victim"
+				},
+				"enchanted": "attacker",
+				"affected": "victim"
+			},
+			{
+				"requirements": [
+					{
+						"condition": "minecraft:damage_source_properties",
+						"predicate": {
+							"direct_entity": {
+								"type": "minecraft:fireball",
+								"nbt": "{Tags:[\"server.main.custom_item.shyoru.fire_wand.projectile\"]}"
+							}
+						}
+					}
+				],
+				"effect": {
+					"type": "minecraft:all_of",
+					"effects": [
+						{
+							"type": "minecraft:damage_entity",
+							"damage_type": "shyoru:fire_wand/2",
+							"min_damage": 12.0,
+							"max_damage": 12.0
+						},
+						{
+							"type": "minecraft:ignite",
+							"duration": 10
+						}
+					]
+				},
+				"enchanted": "attacker",
+				"affected": "victim"
+			}
+		]
+	}
+}

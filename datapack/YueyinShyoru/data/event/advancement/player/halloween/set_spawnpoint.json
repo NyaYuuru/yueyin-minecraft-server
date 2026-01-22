@@ -1,0 +1,18 @@
+{
+	"criteria": {
+		"set_spawnpoint": {
+			"trigger": "minecraft:tick",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:reference",
+						"name": "event:activity/halloween/area/gobal/underground_enter"
+					}
+				]
+			}
+		}
+	},
+	"rewards": {
+		"function": "event:activity/halloween/gobal/set_spawnpoint"
+	}
+}

@@ -1,0 +1,18 @@
+{
+	"criteria": {
+		"consume_item": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"items": "minecraft:enchanted_book",
+					"predicates": {
+						"minecraft:custom_data": "{consumable:{id:\"event:halloween/boss_experience_bottle\"}}"
+					}
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "event:advancement/halloween/boss_experience_bottle"
+	}
+}

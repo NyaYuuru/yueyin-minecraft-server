@@ -1,0 +1,73 @@
+{
+	"type": "minecraft:entity",
+	"pools": [
+		{
+			"rolls": 1,
+			"bonus_rolls": 0,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:enchanted_book",
+					"functions": [
+						{
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:custom_name": {
+									"text": "",
+									"italic": false,
+									"extra": [
+										{
+											"text": "高級經驗瓶",
+											"color": "aqua"
+										}
+									]
+								},
+								"minecraft:lore": [
+									{
+										"text": "",
+										"italic": false,
+										"extra": [
+											{
+												"text": "每一瓶中都裝入了等量的經驗值",
+												"color": "yellow"
+											}
+										]
+									}
+								],
+								"minecraft:consumable": {
+									"animation": "none",
+									"consume_seconds": 0.1,
+									"has_consume_particles": false,
+									"on_consume_effects": [],
+									"sound": {
+										"sound_id": "minecraft:block.amethyst_block.chime"
+									}
+								},
+								"minecraft:max_stack_size": 64,
+								"minecraft:custom_data": "{consumable:{id:\"event:halloween/boss_experience_bottle\"}}",
+								"minecraft:item_model": "minecraft:experience_bottle"
+							}
+						},
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"type": "minecraft:uniform",
+								"min": 0,
+								"max": 2
+							}
+						}
+					]
+				}
+			],
+			"conditions": [
+				{
+					"condition": "minecraft:entity_properties",
+					"entity": "direct_attacker",
+					"predicate": {
+						"type": "minecraft:player"
+					}
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,81 @@
+
+
+give @s minecraft:villager_spawn_egg[\
+	minecraft:lore=[\
+		{"text":"忘憂地下街","color":"aqua","italic":false},\
+		{"text":"神奇大福專賣","color":"green","italic":false},\
+		{"text":"瞳瞳老闆","color":"gold","italic":false}\
+	],\
+	minecraft:entity_data={\
+		id:"minecraft:villager",\
+		CustomName:{"text":"",extra:[{"text":"忘憂地下街","color":"aqua"},{"text":"瞳瞳老闆","color":"gold"}]},\
+		CustomNameVisible:0b,Invulnerable:1b,\
+		VillagerData:{type:"minecraft:taiga",profession:"minecraft:butcher",level:6},\
+		equipment:{head:{id:"minecraft:player_head",count:1,components:{"minecraft:profile":"Hitomi_03_11_"}}},\
+		Offers:{\
+			Recipes:[\
+				{\
+					buy:{\
+						id:"minecraft:prismarine_crystals",\
+						count:5,\
+						components:{\
+							"minecraft:custom_name":{"text":"","italic":false,"extra":[{"text":"忘憂代幣","color":"gold"}]},\
+							"minecraft:lore":[\
+								{"text":"","italic":false,"extra":[{"text":"忘憂地下街的專屬兌換代幣","color":"dark_purple"}]}\
+							],\
+							"minecraft:enchantments":{"minecraft:fortune":1},\
+							"minecraft:food":{nutrition:1,saturation:1.0f,can_always_eat:1b},\
+							"minecraft:consumable":{\
+								on_consume_effects:[\
+									{\
+										type:"minecraft:apply_effects",\
+										effects:[\
+											{id:"minecraft:instant_damage",duration:2,show_particles:0b,show_icon:0b},\
+											{id:"minecraft:luck",duration:200,show_particles:0b,show_icon:0b}\
+										]\
+									}\
+								],\
+								sound:{sound_id:"minecraft:block.amethyst_block.chime"}\
+							},\
+							"minecraft:max_stack_size":99,\
+							"minecraft:tooltip_display":{hidden_components:["minecraft:enchantments"]}\
+						}\
+					},\
+					sell:{\
+						id:"minecraft:apple",\
+						count:1,\
+						components:{\
+							"minecraft:custom_name":{"text":"","italic":false,"extra":[{"text":"草莓大福","color":"light_purple"}]},\
+							"minecraft:lore":[\
+								{"text":"","italic":false,"extra":[{"text":"瞳瞳老闆親自製作的草莓大福","color":"dark_purple"}]},\
+								{"text":"","italic":false,"extra":[{"text":"裡面含有神奇力量","color":"dark_purple"}]}\
+							],\
+							"minecraft:food":{nutrition:12,saturation:12.0f,can_always_eat:1b},\
+							"minecraft:consumable":{\
+								animation:"eat",\
+								consume_seconds:1.6f,\
+								has_consume_particles:1b,\
+								on_consume_effects:[\
+									{\
+										type:"minecraft:apply_effects",\
+										effects:[\
+											{id:"minecraft:instant_health",amplifier:0,duration:1200,show_particles:0b,show_icon:0b},\
+											{id:"minecraft:absorption",amplifier:4,duration:1200,show_particles:0b,show_icon:0b}\
+										]\
+									}\
+								],\
+								sound:{sound_id:"minecraft:block.amethyst_block.chime"}\
+							},\
+							"minecraft:custom_model_data":{strings:["item.草莓大福"]},\
+							"minecraft:max_stack_size":99\
+						}\
+					},\
+					maxUses:2147483647,xp:0,rewardExp:0b\
+				}\
+			]\
+		}\
+	}\
+]
+
+
+

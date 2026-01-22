@@ -1,0 +1,17 @@
+{
+	"criteria": {
+		"return_to_village": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"predicates": {
+						"minecraft:custom_data": "{event:{\"event:halloween\":{on_use:{return_to_village:1b}}}}"
+					}
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "event:activity/halloween/village/return_to_village"
+	}
+}
